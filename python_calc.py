@@ -7,9 +7,10 @@ def calculator():
         print("4. Division")
         print("5. check even/odd")
         print("6. calculate percentage")
-        print("7. Exit")
+        print("7. which number is greater")
+        print("8. Exit")
         
-        choice = int(input("Enter the option(1-7): "))
+        choice = int(input("Enter the option(1-8): "))
         if choice == 1:
             a = float(input("Enter your first number: "))
             b = float(input("Enter your second number: "))
@@ -41,9 +42,17 @@ def calculator():
                 percentage = (part/total) * 100
                 print(percentage)
         elif choice == 7:
+            a = float(input("Enter your first number: "))
+            b = float(input("Enter your second number: "))
+            if a > b:
+                print("first number is greater")
+            else:
+                print("second number is greater")
+            
+        elif choice == 8:
             print("Exit")
             break
         else:
-            print("Invalid option please select an option between 1 and 7: ")
+            print("Invalid option please select an option between 1 and 8: ")
 
 calculator()
